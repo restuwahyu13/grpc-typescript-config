@@ -1,4 +1,4 @@
-## Generate Protofile Typedefs For Typescript
+## Generate Protofile Type Definition For Typescript
 
 ### Install Make GNU
 
