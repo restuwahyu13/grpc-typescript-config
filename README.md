@@ -69,7 +69,13 @@ endif
 #### Linux/MacOS
  
 ```bash
- 
+INPUT_DIR := ${realpath protos}
+OUTPUT_DIR := ${realpath typedefs}
+FIND_FILE := ${wildcard ${OUTPUT_DIR}/*.ts}
+GRPC_TOOLS = grpc_tools_node_protoc
+PROTOC_GEN_TS_PATH_WINDOWS := ${realpath node_modules/.bin/protoc-gen-ts.cmd}
+PROTOC_GEN_TS_PATH_LINMAC := ${realpath node_modules/.bin/protoc-gen-ts}
+
 ####################################################################################
 ##==================================================================================
 ## GENERATE PROTO FILE FOR LINUX/MAC USING grpc_tools_node_protoc FOR @grpc/grpc-js
